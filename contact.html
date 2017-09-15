@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700|Open+Sans+Condensed:300" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
 <title>contact</title>
@@ -10,7 +12,7 @@
 <body>
 <header>
   <div class="wrapper">
-    <div class="row"> <img><!--====  Eyeballs image. float left ====-->
+    <div class="row"><a href="index.html"><img src="img/eyeballs.png" alt="two-eyeballs"></a><!--====  Eyeballs image. float left ==-->
       <nav><!-- float right -->
         <ul>
           <li><a href="index.html">home</a></li>
@@ -22,14 +24,29 @@
     </div>
   </div>
 </header>
-<div class="wrapper">
-  <header>
+<section class="wrapper">
+  <header id="contact">
     <h1>Tell me something cool</h1>
   </header>
-  <form>
-    <!--=====  Form  =====-->
-  </form>
-</div>
+  <!--=====  Form - display inline block =====-->
+  <div class="row">
+    <form>
+      <fieldset>
+      <div id="name-left">
+        <label>Name</label>
+        <input type="text" name="name" placeholder="Name">
+      </div>
+      <div id="email-right">
+        <label>Email</label>
+        <input type="text" name="email" placeholder="Email">
+      </div>
+        <label>Message</label>
+        <textarea rows="5" cols="50" placeholder="Message"></textarea>
+      </fieldset>
+      <p><a class="butt" href="#">Submit</a></p>
+    </form>
+  </div>
+</section>
 <footer>
   <div class="wrapper">
     <div class="row">
